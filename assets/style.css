@@ -6,6 +6,16 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+/* title */
+
+.title{
+    font-weight: bold;
+}
+
 /* font colors */
 .white{
     color:#ffffff !important;
@@ -19,12 +29,60 @@ body{
     color: #cccccc !important;
 }
 
+.green{
+    color: #57BC90 !important;
+}
+
+/* button */
+
+.button-green{
+    background-color: #00B39D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.button-green:hover{
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.button-blue{
+    background-color: #64E5F8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.button-blue:hover{
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+/* icon */
+
+.icon{
+    width: 90px !important;
+    height: 80px !important;
+}
+
 /* navbar */
 
 nav div.container img.logo{
     height: 80px;
     width: 180px;
+    margin-right: 20px;
 }
+
+nav div.container li{
+    padding: 10px;
+}
+
+nav div.container li:hover{
+    background-color: #f7f7f7;
+    transition: background-color 1.5s;
+}
+
 
 /* banner */
 
@@ -88,8 +146,63 @@ section.filter{
 
 /* publications */
 
+section.publications{
+    background-color: #F3F3F3;
+}
+
+section.publications .col-md-12{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+section.publications .container .row .col-md-4{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 section.publications .card{
     margin:20px 0px
+}
+
+/* help */
+
+section.help .col-md-4{
+    display: flex;
+    justify-content: center;
+}
+
+section.help .infocard{
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0px;
+    width: 266px;
+    transition: box-shadow 0.6s;
+}
+
+section.help .infocard:hover{
+    box-shadow: 8px 7px 5px -3px #cccccc;
+}
+
+section.help .infocard a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.help .infocard h2{
+    margin-top: 20px;
+}
+
+section.help .infocard a p{
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 200px;
+    text-align: justify;
 }
 
 
@@ -112,9 +225,5 @@ footer{
 } 
 
 @media (max-width: 768px){
-    section.publications .container .row .col-md-4{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+    
 }

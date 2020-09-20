@@ -20,6 +20,16 @@ textarea:focus, input:focus, select:focus {
     outline: 0;
 } 
 
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* main */
+
 .main{
     min-height: 100%;
     position:relative;
@@ -117,9 +127,13 @@ div.waves{
 
 /* navbar */
 
+nav{
+    background-color: #ffffff;
+}
+
 nav div.container img.logo{
     height: 80px;
-    width: 180px;
+    width: 170px;
     margin-right: 20px;
 }
 

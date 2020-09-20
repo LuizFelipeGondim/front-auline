@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+html, body{
+    height: 100%;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -15,6 +19,15 @@ textarea:focus, input:focus, select:focus {
     border: 0 none;
     outline: 0;
 } 
+
+.main{
+    min-height: 100%;
+    position:relative;
+}
+
+*html .main {
+	height: 100%;
+}
 
 /* title */
 .title{
@@ -124,14 +137,23 @@ nav div.container li:hover{
 
 footer{
     background-color: #00322B;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 50px;
+    width: 100%;
+    bottom: 0;
+    right: 0 !important;
+    left: 0 !important;
+    position: absolute;
+}
+
+footer .container {
+    margin-top: 7px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 
 footer a{
-    margin: 4px 30px 0px 0px;
+    margin: 5px 30px 0px 0px;
 }
 
 footer p{

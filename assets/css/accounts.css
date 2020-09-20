@@ -1,0 +1,13 @@
+/* form */
+
+section.form-main .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+section.form-main input.form-input{
+    border:none;
+    border-bottom: 1px solid #cccccc;
+}

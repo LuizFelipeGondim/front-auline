@@ -10,10 +10,26 @@ a:link{
     text-decoration: none;
 }
 
-/* title */
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
+/* title */
 .title{
     font-weight: bold;
+}
+
+.title-input{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* waves */
+
+div.waves{
+    max-height: 200px;
 }
 
 /* font colors */
@@ -33,6 +49,11 @@ a:link{
     color: #57BC90 !important;
 }
 
+.text-opacity{
+    opacity: 0.6;
+    font-size: small;
+}
+
 /* button */
 
 .button-green{
@@ -40,6 +61,7 @@ a:link{
     padding: 10px 20px;
     border-radius: 5px;
     color: #ffffff;
+    border: none;
 }
 
 .button-green:hover{
@@ -64,6 +86,20 @@ a:link{
 .icon{
     width: 90px !important;
     height: 80px !important;
+}
+
+/* info blocks */
+
+.size{
+    background-color: #FF914D;
+}
+
+.sex-male{
+    background-color: #1fbaca;
+}
+
+.sex-female{
+    background-color: #de0ec4;
 }
 
 /* navbar */
@@ -143,6 +179,36 @@ section.filter{
     background-color: #42E29C;
 }
 
+section.filter .col-md-4, 
+section.filter .col-md-8{
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+section.filter .col-md-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.filter .input-filter{
+    background-color: #42E29C;
+    border: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    width: 250px;
+}
+
+section.filter .input-filter::placeholder{
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+section.filter select.input-filter{
+    background-color: #42E29C;
+}
+
+
 
 /* publications */
 
@@ -164,8 +230,61 @@ section.publications .container .row .col-md-4{
 }
 
 section.publications .card{
-    margin:20px 0px
+    margin:20px 0px;
 }
+
+section.publications .card img{
+    cursor: pointer;
+    z-index: 3;
+    min-height: 180px
+}
+
+section.publications .card .overlay-green{
+    width:100%;
+    height: 190px;
+    background-color: #57BC90;
+    opacity: 0.7;
+    z-index: 4;
+    display: none;
+    
+}
+
+section.publications .card img:hover + .overlay-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+section.publications .card .block-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+section.publications .card .localization{
+    margin-top: -8px;
+}
+
+section.publications .card .block-info .info p{
+    margin-top: 15px !important;
+    cursor: pointer;
+}
+
+section.publications .card .block-info .info{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
+
+
+
+
 
 /* help */
 
@@ -181,6 +300,7 @@ section.help .infocard{
     margin: 30px 0px;
     width: 266px;
     transition: box-shadow 0.6s;
+    min-height: 330px;
 }
 
 section.help .infocard:hover{
@@ -216,14 +336,39 @@ footer{
     height: 50px;
 }
 
+footer a{
+    margin: 4px 30px 0px 0px;
+}
+
+footer p{
+    margin: 5px 0px 0px 30px;
+}
+
 /* media queries */
 
 @media (max-width: 990px){
     section.publications .card {
         max-width: 230px;
     }
+
+    section.publications .card img{
+        min-height: 160px;
+    }
+
+    section.publications .card .overlay-green{
+        height: 160px;
+    }
+
+    section.filter .input-filter{
+        width: 200px;
+    }
 } 
 
 @media (max-width: 768px){
-    
+    section.filter .input-filter{
+        width: 100%;
+    }
+    section.filter form{
+        padding: 20px;
+    }
 }

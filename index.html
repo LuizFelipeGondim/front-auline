@@ -75,11 +75,61 @@
 	<section class="filter">
 		<div class="container">
 			<div class="row">
+
 				<div class="col-md-4">
-					<h1 class="title white"> ENCONTRE SEU AMIGO </h1>
+					<h1 class="title white text-center"> ENCONTRE SEU AMIGO </h1>
 				</div>
-				<div class="col-md-4">aws</div>
-				<div class="col-md-4">aws</div>
+
+				<div class="col-md-8">
+					<form method="POST">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+							  <label class="title-input">Nome</label> <br>
+							  <input type="text" class="input-filter" placeholder="Nome">
+							</div>
+							<div class="form-group col-md-6">
+								<label class="title-input" >Cidade</label> <br>
+								<input type="text" class="input-filter" placeholder="Cidade">
+							</div>
+							<div class="form-group col-md-6">
+								<label class="title-input" >Categoria</label> <br>
+								<select class="input-filter">
+									<option value="">Perdido</option>
+									<option value="">Para adoção</option>
+									<option value="">Encontrado</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="title-input" >Porte</label> <br>
+								<select class="input-filter">
+									<option value="">Pequeno</option>
+									<option value="">Médio</option>
+									<option value="">Grande</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="title-input" >Sexo</label> <br>
+								<select class="input-filter">
+									<option value="">Macho</option>
+									<option value="">Fêmea</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="title-input" >Tipo</label> <br>
+								<select class="input-filter">
+									<option value="">Cachorro</option>
+									<option value="">Gato</option>
+								</select>
+							</div>
+							<div class="col-md-6"></div>
+							<div class="col-md-6">
+								<button type="submit" class="button-green">Filtrar</button>
+							</div>
+						</div>
+						
+						
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -94,70 +144,149 @@
 				</div>
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="assets/images/dog.jpg" class="card-img-top" alt="...">
+						
+						<img src="assets/images/dog.jpg" class="card-img-top" alt="animal">
+						<a href="#" class="overlay-green white" > 
+							<img src="assets/images/search.svg" class="icon" alt="search">
+						</a>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h5 class="black">Rex</h5>
+							<p class="black text-opacity localization">Guanambi</p>
+							<div class="block-info">
+								<div class="info" style="background-color: red" data-toggle="tooltip" data-placement="top" title="Perdido">
+									<p class="white">P</p>
+								</div>
+								<div class="info size" data-toggle="tooltip" data-placement="top" title="Médio">
+									<p class="white">M</p>
+								</div>
+								<div class="info sex-male" data-toggle="tooltip" data-placement="top" title="Macho">
+									<p class="white">M</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="assets/images/dog.jpg" class="card-img-top" alt="...">
+						
+						<img src="assets/images/dog.jpg" class="card-img-top" alt="animal">
+						<a href="#" class="overlay-green white" > 
+							<img src="assets/images/search.svg" class="icon" alt="search">
+						</a>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card" style="width: 18rem; display:flex; flex-wrap: wrap;">
-						<img src="assets/images/dog.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
-						<img src="assets/images/dog.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h5 class="black">Rex</h5>
+							<p class="black text-opacity localization">Guanambi</p>
+							<div class="block-info">
+								<div class="info" style="background-color: red" data-toggle="tooltip" data-placement="top" title="Perdido">
+									<p class="white">P</p>
+								</div>
+								<div class="info size" data-toggle="tooltip" data-placement="top" title="Médio">
+									<p class="white">M</p>
+								</div>
+								<div class="info sex-male" data-toggle="tooltip" data-placement="top" title="Macho">
+									<p class="white">M</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="assets/images/dog.jpg" class="card-img-top" alt="...">
+						
+						<img src="assets/images/dog.jpg" class="card-img-top" alt="animal">
+						<a href="#" class="overlay-green white" > 
+							<img src="assets/images/search.svg" class="icon" alt="search">
+						</a>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h5 class="black">Rex</h5>
+							<p class="black text-opacity localization">Guanambi</p>
+							<div class="block-info">
+								<div class="info" style="background-color: red" data-toggle="tooltip" data-placement="top" title="Perdido">
+									<p class="white">P</p>
+								</div>
+								<div class="info size" data-toggle="tooltip" data-placement="top" title="Médio">
+									<p class="white">M</p>
+								</div>
+								<div class="info sex-male" data-toggle="tooltip" data-placement="top" title="Macho">
+									<p class="white">M</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="assets/images/dog.jpg" class="card-img-top" alt="...">
+						
+						<img src="assets/images/dog.jpg" class="card-img-top" alt="animal">
+						<a href="#" class="overlay-green white" > 
+							<img src="assets/images/search.svg" class="icon" alt="search">
+						</a>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk
-								of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<h5 class="black">Rex</h5>
+							<p class="black text-opacity localization">Guanambi</p>
+							<div class="block-info">
+								<div class="info" style="background-color: red" data-toggle="tooltip" data-placement="top" title="Perdido">
+									<p class="white">P</p>
+								</div>
+								<div class="info size" data-toggle="tooltip" data-placement="top" title="Médio">
+									<p class="white">M</p>
+								</div>
+								<div class="info sex-female" data-toggle="tooltip" data-placement="top" title="Fêmea">
+									<p class="white">F</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="col-md-4">
+					<div class="card" style="width: 18rem;">
+						
+						<img src="assets/images/dog.jpg" class="card-img-top" alt="animal">
+						<a href="#" class="overlay-green white" > 
+							<img src="assets/images/search.svg" class="icon" alt="search">
+						</a>
+						<div class="card-body">
+							<h5 class="black">Rex</h5>
+							<p class="black text-opacity localization">Guanambi</p>
+							<div class="block-info">
+								<div class="info" style="background-color: red" data-toggle="tooltip" data-placement="top" title="Perdido">
+									<p class="white">P</p>
+								</div>
+								<div class="info size" data-toggle="tooltip" data-placement="top" title="Médio">
+									<p class="white">M</p>
+								</div>
+								<div class="info sex-male" data-toggle="tooltip" data-placement="top" title="Macho">
+									<p class="white">M</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card" style="width: 18rem;">
+						
+						<img src="assets/images/dog.jpg" class="card-img-top" alt="animal">
+						<a href="#" class="overlay-green white" > 
+							<img src="assets/images/search.svg" class="icon" alt="search">
+						</a>
+						<div class="card-body">
+							<h5 class="black">Rex</h5>
+							<p class="black text-opacity localization">Guanambi</p>
+							<div class="block-info">
+								<div class="info" style="background-color: red" data-toggle="tooltip" data-placement="top" title="Perdido">
+									<p class="white">P</p>
+								</div>
+								<div class="info size" data-toggle="tooltip" data-placement="top" title="Médio">
+									<p class="white">M</p>
+								</div>
+								<div class="info sex-female" data-toggle="tooltip" data-placement="top" title="Fêmea">
+									<p class="white">F</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 				<div class="col-md-12">
 					<a href="#" class="button-green white">Ver mais (44)</a>
 				</div>
@@ -213,16 +342,11 @@
 	</section>
 
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<p class="white">© 2020 AUline, Inc.</p>
-				</div>
-				<div class="col-sm-6">
-					<a href="#" class="white">Entre em contato</a>
-				</div>
-			</div>
-		</div>
+		
+		<p class="white text-opacity">© 2020 AUline, Inc.</p>
+
+		<a href="#" class="white">Entre em contato</a>
+
 	</footer>
 </body>
 

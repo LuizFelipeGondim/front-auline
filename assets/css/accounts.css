@@ -22,28 +22,67 @@ section.form-main form{
     margin: 20px 0px;
 }
 
+section.form-main form.form-long{
+    max-width: 800px;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
 section.form-main .form-group{
     position: relative;
 }
 
-section.form-main form input.form-input::placeholder{
+section.form-main form .form-input::placeholder{
     color: #E5E5E5;
 }
 
 
-section.form-main input.form-input{
+section.form-main .form-input{
     border:none;
     border-bottom: 1px solid #cccccc;
     width: 100%;
     color: #9C9C9C;
+    background-color: #ffffff;
 }
 
-section.form-main input.form-input:focus{
+section.form-main .form-input:focus{
     border-bottom: 1px solid #64E5F8;
 }
 
+/* textarea */
+
+section.form-main form .form-textarea::placeholder{
+    color: #E5E5E5;
+}
+
+
+section.form-main .form-textarea{
+    border: 1px solid #cccccc;
+    width: 100%;
+    border-radius: 5px;
+    color: #9C9C9C;
+    background-color: #ffffff;
+    padding:0px 4px;
+}
+
+section.form-main .form-textarea:focus{
+    border: 1px solid #64E5F8;
+}
+
+/* button */
+
 .form-btn{
     width: 95%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+form.form-long .form-btn{
+    width: 50%;
+    min-width: 180px !important;
     margin-bottom: 10px;
 }
 
@@ -53,3 +92,8 @@ section.form-main input.form-input:focus{
     color: #868686;
 }
 
+@media (max-width: 400px){
+    .title{
+        font-size: 25px;
+    }
+}

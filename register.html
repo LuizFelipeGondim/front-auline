@@ -1,74 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"></script>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="assets/css/global.css">
+		<link rel="stylesheet" href="assets/css/global.css">
 
-	<link rel="stylesheet" href="assets/css/accounts.css">
+		<link rel="stylesheet" href="assets/css/accounts.css">
 
-	<title>Página inicial</title>
-</head>
+		<title>Cadastro</title>
+	</head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container">
-			<img src="assets/images/logo.png" class="logo" alt="Logo">
+	<body>
+		<div class="main">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<img src="assets/images/logo.png" class="logo" alt="Logo">
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
-				aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon black"></span>
-			</button>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+						aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon black"></span>
+					</button>
 
-			<div class="collapse navbar-collapse" id="navbarsExample07">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link black" href="#">Página Inicial</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link black" href="#">Sobre nós</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link black" href="#">Incentivo</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link black" href="#">Doe</a>
-					</li>
-				</ul>
-				<div class="my-2 my-md-0">
-					<a href="#" class="button-blue">Login</a>
-					<a href="#" class="button-green">Cadastro</a>
+					<div class="collapse navbar-collapse" id="navbarsExample07">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link black" href="http://127.0.0.1:5500/">Página Inicial</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link black" href="#">Sobre nós</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link black" href="#">Incentivo</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link black" href="#">Doe</a>
+							</li>
+						</ul>
+						<div class="my-2 my-md-0">
+							<a href="http://127.0.0.1:5500/login.html" class="button-blue">Login</a>
+							<a href="http://127.0.0.1:5500/register.html" class="button-green">Cadastro</a>
+						</div>
+					</div>
 				</div>
-			</div>
+			</nav>
+
+			<section class="form-main">
+				<form method="POST" class="form-long">
+					<div class="container">
+						<div class="row">
+							<di class="col-md-12">
+								<h1 class="green title">CADASTRO</h1>
+								<p class="description">Cadastre-se na no nosso site a ajude os animais! </p>
+							</di>
+							<div class="col-md-12">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Nome</label> <br>
+										<input type="text" class="form-input" placeholder="Nome">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Sobrenome</label> <br>
+										<input type="text" class="form-input" placeholder="Sobrenome">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">E-mail</label> <br>
+										<input type="email" class="form-input" placeholder="E-mail">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Usuário</label> <br>
+										<input type="text" class="form-input" placeholder="Usuário">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Senha</label> <br>
+										<input type="password" class="form-input" placeholder="******">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Repita a senha</label> <br>
+										<input type="password" class="form-input" placeholder="******">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Estado</label> <br>
+										<select class="form-input">
+											<option value="">Bahia</option>
+											<option value="">Minas Gerais</option>
+											<option value="">...</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Cidade</label> <br>
+										<select class="form-input">
+											<option value="">Guanambi</option>
+											<option value="">Monte Alto</option>
+											<option value="">...</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6" style="margin-top:-4px;">
+										<label class="form-title gray">Data de nascimento</label> <br>
+										<input type="datetime" class="form-input" placeholder="10/09/2000">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray">Gênero</label> <br>
+										<select class="form-input">
+											<option value="">Masculino</option>
+											<option value="">Feminino</option>
+											<option value="">Outro</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6">
+										<label class="form-title gray"> Whatsapp </label> <br>
+										<input type="text" class="form-input" placeholder="(99) 99999-9999">
+									</div>
+								</div>
+							</div>
+							<div class="center text-center">
+								<button type="submit" class="button-green form-btn">Cadastrar</button>
+								<p class="text-opacity">
+									Já possui um cadastro?<a href="http://127.0.0.1:5500/login.html"> Login</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+
 		</div>
-	</nav>
 
-
-	<footer>
-		
-		<p class="white text-opacity">© 2020 AUline, Inc.</p>
-
-		<a href="#" class="white">Entre em contato</a>
-
-	</footer>
-</body>
+	</body>
 
 </html>

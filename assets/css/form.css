@@ -14,7 +14,7 @@ section.form-main{
 }
 
 section.form-main form{
-    max-width: 350px;
+    max-width: 360px;
     width: 80%;
     background-color: #ffffff;
     padding: 30px;
@@ -80,6 +80,7 @@ section.form-main .form-textarea:focus{
     margin-top: 10px;
 }
 
+
 form.form-long .form-btn{
     width: 50%;
     min-width: 180px !important;
@@ -92,6 +93,8 @@ form.form-long .form-btn{
     color: #868686;
 }
 
+/* img-error */
+
 .img-error{
     height: 15%;
     width: 35%;
@@ -100,6 +103,17 @@ form.form-long .form-btn{
     max-width: 500px;
     max-height: 500px;
 }
+
+/* delete-box */
+
+section.form-main form .delete-box{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* media-queries */
 
 @media (max-width: 400px){
     .title{

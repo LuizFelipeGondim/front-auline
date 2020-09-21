@@ -92,6 +92,15 @@ form.form-long .form-btn{
     color: #868686;
 }
 
+.img-error{
+    height: 15%;
+    width: 35%;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
 @media (max-width: 400px){
     .title{
         font-size: 25px;

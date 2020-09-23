@@ -1,8 +1,7 @@
 /* sidebar */
 
-section.content .sidebar{
+section.content-main .sidebar{
     background-color: #FDFDFD;
-    height: 100%;
     min-height: 730px;
     padding: 15px;
     display:flex;
@@ -11,69 +10,202 @@ section.content .sidebar{
     align-items: center;
 }
 
-section.content .sidebar .img-profile{
+
+
+section.content-main .sidebar .img-profile{
     height: 200px;
     width: 200px;
     border-radius: 5px;
 }
 
-section.content .sidebar .name{
+section.content-main .sidebar .name{
     width: 90%;
     margin-top: 10px;
 }
 
-section.content .sidebar .bio{
+section.content-main .sidebar .bio{
     width: 90%;
     font-size: small;
     margin-top: 5px;
 }
 
-section.content .sidebar .info{
+section.content-main .sidebar .info{
     width: 90%;
     margin-bottom: 20px !important;
     font-size: small;
 }
 
-section.content .sidebar .info li{
+section.content-main .sidebar .info li{
     margin-left: -40px;
 }
 
-section.content .sidebar .button-bar{
+section.content-main .sidebar .button-bar{
     border-top: 1px solid #00322B;
 }
 
-section.content .sidebar .button-bar a{
+section.content-main .sidebar .button-bar a{
     border-bottom: 1px solid #00322B;
     width: 100%;
     height: 50px;
 }
 
-section.content .sidebar .button-bar .active-link{
+section.content-main .sidebar .button-bar .active-link{
     background-color: #CAE7D5;
 }
 
-section.content .sidebar .button-bar a:hover{
+section.content-main .sidebar .button-bar a:hover{
     background-color: #CAE7D5;
 }
+
+/* content */
+
+.content{
+    margin-top: 15px;
+    background-color: #f3f3f3;
+    border-radius:5px ;
+    min-height: 715px;
+    padding: 20px;
+    margin-bottom: 80px
+}
+
+section.content-main .content h1{
+    margin-left: 10px;
+}
+
+section.content-main .content .cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+section.content-main .content .cards .card{
+    margin:20px 10px;
+    max-width: 240px;
+}
+
+section.content-main .content .cards .card img{
+    cursor: pointer;
+    z-index: 3;
+    min-height: 180px
+}
+
+section.content-main .content .cards .card .block-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+section.content-main .content .cards .card .localization{
+    margin-top: -8px;
+}
+
+section.content-main .content .cards .card .block-info .info p{
+    margin-top: 15px !important;
+    cursor: pointer;
+}
+
+section.content-main .content .cards .card .block-info .info{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
 
 /* media queries */
 
 @media (max-width: 1200px){
-    section.content .sidebar .img-profile{
+    section.content-main .sidebar .img-profile{
         height: 170px;
         width: 170px;
         border-radius: 5px;
     }
+
+    section.content-main .content .cards .card{
+        min-width: 230px;
+    }
+    
 }
 
 @media (max-width: 992px){
-    section.content .col-md-3{
+    section.content-main .col-md-3{
         max-width: 30%;
     }
+
+    section.content-main .col-md-9{
+        max-width: 65%;
+    }
+
+    section.content-main .content .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px
+    }
+    
 }
 
 @media (max-width: 768px){
-    section.content .col-md-3{
-        max-width: 1000%;
+
+    section.content-main .name,
+    section.content-main .bio,
+    section.content-main .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.content-main .bio{
+        width: 80% !important;
+        text-align: center;
+    }
+
+    section.content-main .col-md-3{
+        max-width: 100%;
+    }
+    section.content-main .col-md-9{
+        max-width: 100%;
+    }
+
+    section.content-main .sidebar{
+        min-height: 650px;
+        border-radius: 5px
+    }
+
+}
+
+@media (max-width: 380px){
+
+    .title{
+        font-size: 25px;
+    }
+
+    section.content-main .content .cards .card {
+        min-width: 200px;
+
+    }
+
+    section.content-main .content{
+        padding: 10px;
+
+    }
+}
+
+@media (max-width: 310px){
+
+    section.content-main .content .cards .card {
+        min-width: 180px;
+
+    }
+
+    section.content-main .content .cards .card img{
+        min-width: 180px;
+        min-height: auto;
     }
 }

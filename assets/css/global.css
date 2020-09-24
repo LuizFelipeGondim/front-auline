@@ -178,3 +178,9 @@ footer p{
     margin: 5px 0px 0px 30px;
 }
 
+@media (max-width: 324px){
+    footer{
+        height: 70px;
+    }
+}
+

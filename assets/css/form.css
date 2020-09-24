@@ -22,8 +22,8 @@ section.form-main form{
     margin: 20px 0px;
 }
 
-section.form-main form.form-long{
-    max-width: 800px;
+form.form-long{
+    max-width: 800px !important;
     width: 80%;
     background-color: #ffffff;
     padding: 30px;
@@ -31,16 +31,16 @@ section.form-main form.form-long{
     margin: 20px 0px;
 }
 
-section.form-main .form-group{
+.form-group{
     position: relative;
 }
 
-section.form-main form .form-input::placeholder{
+form .form-input::placeholder{
     color: #E5E5E5;
 }
 
 
-section.form-main .form-input{
+.form-input{
     border:none;
     border-bottom: 1px solid #cccccc;
     width: 100%;
@@ -48,18 +48,17 @@ section.form-main .form-input{
     background-color: #ffffff;
 }
 
-section.form-main .form-input:focus{
+.form-input:focus{
     border-bottom: 1px solid #64E5F8;
 }
 
 /* textarea */
-
-section.form-main form .form-textarea::placeholder{
+form .form-textarea::placeholder{
     color: #E5E5E5;
 }
 
 
-section.form-main .form-textarea{
+.form-textarea{
     border: 1px solid #cccccc;
     width: 100%;
     border-radius: 5px;
@@ -68,7 +67,7 @@ section.form-main .form-textarea{
     padding:0px 4px;
 }
 
-section.form-main .form-textarea:focus{
+.form-textarea:focus{
     border: 1px solid #64E5F8;
 }
 

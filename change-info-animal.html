@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="assets/css/global.css">
+
+        <link rel="stylesheet" href="assets/css/form.css">
+
+        <link rel="stylesheet" href="assets/css/profile.css">
+
+        <title>Luiz Felipe</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <img src="assets/images/logo.png" class="logo" alt="Logo">
+        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                        aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon black"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarsExample07">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link black" href="http://127.0.0.1:5500/">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link black" href="#">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link black" href="#">Incentivo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link black" href="#">Doe</a>
+                            </li>
+                        </ul>
+                        <div class="my-2 my-md-0">
+                            <a href="http://127.0.0.1:5500/login.html" class="button-blue">Login</a>
+                            <a href="http://127.0.0.1:5500/register.html" class="button-green">Cadastro</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="content-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="sidebar">
+                                <figure>
+                                    <img src="assets/images/saitama.jpg" class="img-profile" alt="Foto de perfil">
+                                </figure>
+                                
+                                <div class="name">
+                                    <h4>LUIZ FELIPE</h2>
+                                </div>
+                                <div class="bio">
+                                    <p class="gray">
+                                        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                                        consectetur, adipisci velit...
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <h5 class="black" >INFORMAÇÕES:</h5>
+                                    <ul>
+                                        <li class="gray">luiz@gmail.com</li>
+                                        <li class="gray">Guanambi - BA</li>
+                                        <li class="gray">(77) 99999-9999</li>
+                                    </ul>
+                                </div>
+                                <div class="button-bar center">
+                                    <a href="" class="black text-center center active-link" >
+                                        ANIMAIS CADASTRADOS
+                                    </a>
+                                    <a href="" class="black text-center center"  >ALTERAR INFORMAÇÕES</a>
+                                    <a href="" class="black text-center center"  >EXCLUIR CONTA</a>
+                                    <a href="" class="black text-center center" >SAIR</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="content">
+
+                                <form method="POST" class="form-long">
+                                    <div class="container">
+                                        <div class="row">
+                                            <di class="col-md-12">
+                                                <h1 class="green title title-form">EDITAR ANIMAL</h1>
+
+                                            </di>
+                                            <div class="col-md-12">
+                                                <div class="form-row">
+                
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Categoria</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Perdido</option>
+                                                            <option value="">Para adoção</option>
+                                                            <option value="">Adotado</option>
+                                                        </select>
+                                                    </div>
+                
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Estado</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Bahia</option>
+                                                            <option value="">Minas Gerais</option>
+                                                            <option value="">...</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6" style="margin-top:-4px;">
+                                                        <label class="form-title gray">Nome</label> <br>
+                                                        <input type="text" class="form-input" placeholder="Nome">
+                                                    </div>
+                
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Cidade</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Guanambi</option>
+                                                            <option value="">Monte Alto</option>
+                                                            <option value="">...</option>
+                                                        </select>
+                                                    </div>
+                
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Tipo</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Cachorro</option>
+                                                            <option value="">Gato</option>
+                                                        </select>
+                                                    </div>
+                
+                                                    <div class="form-group col-md-6" style="margin-top:-4px;">
+                                                        <label class="form-title gray">Rua</label> <br>
+                                                        <input type="text" class="form-input" placeholder="Rua onde foi visto pela última vez">
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Porte</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Pequeno</option>
+                                                            <option value="">Médio</option>
+                                                            <option value="">Grande</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6" style="margin-top:-4px;">
+                                                        <label class="form-title gray">Raça</label> <br>
+                                                        <input type="text" class="form-input" placeholder="Vira-lata">
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Sexo</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Macho</option>
+                                                            <option value="">Fêmea</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Vacinado</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Não informado</option>
+                                                            <option value="">Sim</option>
+                                                            <option value="">Não</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Castrado</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Não informado</option>
+                                                            <option value="">Sim</option>
+                                                            <option value="">Não</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Vermifugado</label> <br>
+                                                        <select class="form-input">
+                                                            <option value="">Não informado</option>
+                                                            <option value="">Sim</option>
+                                                            <option value="">Não</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Características</label> <br>
+                                                        <textarea cols="30" rows="6"class="form-textarea" placeholder="Características do animal">
+                                                        </textarea>
+                                                    </div>
+
+                                                    <div class="form-group col-md-6" style="margin-top:-4px;">
+                                                        <label class="form-title gray">Imagem</label> <br>
+                                                        <input type="text" class="form-input" placeholder="Campo temporário">
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label class="form-title gray">Comentário</label> <br>
+                                                        <textarea cols="30" rows="6"class="form-textarea">
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="center text-center">
+                                                <button type="submit" class="button-green form-btn">Editar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <footer>
+                <div class="container">
+                    <p class="white text-opacity">© 2020 AUline, Inc.</p>   
+                    <a href="#" class="white">Entre em contato</a> 
+                </div>
+            </footer>
+        </div> 
+    </body>
+</html>

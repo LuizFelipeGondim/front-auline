@@ -1,0 +1,164 @@
+
+/* animal info */
+
+section.animal-info{
+    margin-bottom: 25px;
+}
+
+section.animal-info img{
+    width: 100%;
+    height: 580px;
+}
+
+
+section.animal-info .block-info{
+    padding: 20px;
+    background-color: #fdfdfd;
+}
+
+section.animal-info .block-info .specific{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section.animal-info .block-info .specific ul{
+    max-width: 250px;
+}
+
+section.animal-info .block-info .specific ul li{
+    margin-left: -40px;
+}
+
+section.animal-info .block-info .specific .carac{
+    max-width: 300px;
+}
+
+/* health */
+
+.block-info .block-health{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.block-info .block-health .health{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block-info .block-health .health img{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+}
+
+.not-healthy{
+    background-color: #f16565;
+    transition: opacity 1s;
+}
+
+.healthy{
+    background-color: #28c966;
+    transition: opacity 1s;
+}
+
+.not-healthy:hover{
+    opacity: 0.8;
+}
+
+.healthy:hover{
+    opacity: 0.8;
+}
+
+/* block map */
+
+section.block-map{
+    padding: 15px;
+}
+
+section.block-map .map {
+    margin-bottom: 80px;
+}
+
+/* media queries */
+
+@media (max-width: 1200px){
+    section.animal-info img{
+        height: 90%;
+    }
+
+    section.animal-info .block-info .specific .carac{
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 992px){
+
+    section.animal-info img{
+        height: 60%;
+    }
+
+    section.animal-info .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    section.animal-info .row .col-md-6{
+        max-width: 80% !important;
+    }
+}
+
+@media (max-width: 768px){
+    section.animal-info .row .col-md-6{
+        max-width: 90% !important;
+    }
+}
+
+@media (max-width: 460px){
+    .block-info .block-health{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 500px;
+    }
+
+    .block-info .block-health .health{
+        width: 140px;
+        height: 140px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .title{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 410px){
+    section.animal-info img{
+        height: 40%;
+    }
+
+    section.animal-info .block-info .specific{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+

@@ -2,7 +2,6 @@
 
 section.content-main .sidebar{
     background-color: #FDFDFD;
-    min-height: 730px;
     padding: 15px;
     display:flex;
     flex-direction: column;
@@ -64,7 +63,25 @@ section.content-main .sidebar .button-bar a:hover{
     border-radius:5px ;
     min-height: 715px;
     padding: 20px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+}
+
+.content-form{
+    margin-top: 15px;
+    background-color: #f3f3f3;
+    border-radius:5px ;
+    min-height: 715px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.small-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.small-icon:hover{
+    opacity: 0.7;
 }
 
 section.content-main .content h1{
@@ -87,7 +104,17 @@ section.content-main .content .cards .card{
 section.content-main .content .cards .card img{
     cursor: pointer;
     z-index: 3;
-    min-height: 180px
+    min-height: 180px;
+}
+
+section.content-main .content .cards .card .info-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+section.content-main .cards .card .info-top img{
+    min-height: 20px;
 }
 
 section.content-main .content .cards .card .block-info{
@@ -168,6 +195,7 @@ h1.title-form{
 
     form.form-long{
         width: 400px;
+        min-width: 240px !important;
     }
 
     form.form-long .form-row{
@@ -208,13 +236,18 @@ h1.title-form{
     }
 
     section.content-main .sidebar{
-        min-height: 650px;
         border-radius: 5px;
     }
 
-    section.content-main .content{
-        display: flex;
-        justify-content: center;
+    section.content-main .content-form{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    form.form-long{
+        width: 95% !important;
     }
 
 }
@@ -232,7 +265,10 @@ h1.title-form{
 
     section.content-main .content{
         padding: 10px;
+    }
 
+    form.form-long{
+        width: 100% !important;
     }
 }
 

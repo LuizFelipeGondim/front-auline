@@ -159,9 +159,12 @@ section.publications .card .block-info .info{
 
 /* help */
 
-section.help .col-md-4{
+section.help .cards{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
 section.help .infocard{
@@ -172,6 +175,7 @@ section.help .infocard{
     width: 266px;
     transition: box-shadow 0.6s;
     min-height: 330px;
+    max-height: 330px;
 }
 
 section.help .infocard:hover{
@@ -214,13 +218,29 @@ section.help .infocard a p{
     section.filter .input-filter{
         width: 200px;
     }
+
+    section.help .infocard{
+        width: 220px;
+    }
 } 
 
 @media (max-width: 768px){
+
     section.filter .input-filter{
         width: 100%;
     }
+
     section.filter form{
         padding: 20px;
+    }
+
+    section.help .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.help .infocard{
+        width: 266px;
     }
 }

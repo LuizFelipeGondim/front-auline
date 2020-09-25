@@ -1,0 +1,111 @@
+section.text-box .adopt-box,
+section.text-box .donate-box{
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    position: relative;
+}
+
+section.text-box .box{
+    background-color: #F3F3f3;
+    min-height: 550px;
+    width: 50%;
+}
+
+section.text-box .center-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.text-box .center-text h1,
+section.text-box .center-text p{
+    width: 70%;
+}
+
+/* address */
+
+section.address .col-md-8{
+    margin-bottom: 30px;
+}
+
+/* statement */
+
+section.statement-box .statement{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+section.statement-box h1{
+    margin: 40px 0px;
+}
+
+section.statement-box .text-depoiment{
+    width: 70%;
+}
+
+section.statement-box .depoiments{
+    margin-bottom: 70px;
+}
+
+/* media queries */
+
+@media (max-width: 992px){
+
+    section.text-box .adopt-box{
+        flex-direction: column;
+        align-items: center;
+        margin: 280px 0px 500px 0px;
+    }
+
+    section.text-box .donate-box{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 300px;
+    }
+
+    section.text-box .box{
+        width: 100%;
+    }
+
+    section.statement-box .text-depoiment{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px){
+    section.text-box .box img{
+        width: 70%;
+        height: 70%;
+    }
+
+    section.statement-box .statement{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.statement-box .text-depoiment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.statement-box .text-depoiment h4{
+        margin: 10px 0px;
+    }
+
+    section.statement-box .text-depoiment p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 285px){
+    .title{
+        font-size: 25px;
+    }
+}

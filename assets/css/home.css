@@ -110,7 +110,6 @@ section.publications .card{
 }
 
 section.publications .card img{
-    cursor: pointer;
     z-index: 3;
     min-height: 180px
 }

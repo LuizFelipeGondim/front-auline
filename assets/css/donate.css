@@ -1,0 +1,162 @@
+/* donate */
+
+section.donate{
+    margin-bottom: 30px;
+}
+
+section.donate img.dog-donate{
+    width: 100%;
+    max-height: 550px;
+}
+section.donate .col-md-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.donate .text{
+    background-color:#F3F3F3;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    z-index: 5;
+}
+
+section.donate .text p{
+    font-size: x-large;
+}
+
+.triangle {
+    margin-top: 100px;
+    margin-right: -15px;
+    border-left: 60px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 60px solid #f3f3f3;
+    height: 0;
+    width: 80px;
+    transform: rotate(15deg);
+}
+
+/* address */
+
+
+section.address{
+    background-color: #42E29C;
+}
+
+section.address .col-md-8{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0px 70px 0px;
+}
+
+section.address .card{
+    max-width: 230px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+}
+
+section.address .col-md-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media queries */
+
+@media (max-width: 1200px){
+    section.address .card{
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 990px){
+
+
+    section.address .col-md-4{
+        margin-top: 20px;
+        max-width: 90%;
+    }
+    
+    section.address .col-md-8{
+        max-width: 100%;
+    }
+
+    section.address .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.address .card{
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 768px){
+    section.donate .row{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.donate .text{
+        margin-right: -220px;
+        max-height: 400px;
+    }
+
+    .triangle {
+        margin-top: 320px;
+        margin-right: -325px;
+        transform: rotate(-90deg);
+    }
+
+    section.donate img.dog-donate{
+        max-height: 650px;
+    }
+}
+
+@media (max-width: 425px){
+    section.donate .text p{
+        font-size: large;
+    }
+
+    section.donate .text{
+        margin-right: -150px;
+    }
+
+    .triangle {
+        margin-top: 270px;
+        margin-right: -230px;
+       
+        transform: rotate(-90deg);
+    }
+}
+
+@media (max-width: 340px){
+    section.donate .text{
+        margin-right: -100px;
+    }
+
+    .triangle {
+        margin-top: 320px;
+        margin-right: -180px;
+        transform: rotate(-90deg);
+    }
+
+    section.address .col-md-8{
+        margin-bottom: 80px
+    }
+}
+
+    

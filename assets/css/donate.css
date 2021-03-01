@@ -46,61 +46,12 @@ section.donate .text p{
 /* address */
 
 
-section.address{
+section.address {
     background-color: #42E29C;
-}
-
-section.address .col-md-8{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 15px 0px 70px 0px;
-}
-
-section.address .card{
-    max-width: 230px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: none;
-}
-
-section.address .col-md-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 30px !important;
 }
 
 /* media queries */
-
-@media (max-width: 1200px){
-    section.address .card{
-        max-width: 190px;
-    }
-}
-
-@media (max-width: 990px){
-
-
-    section.address .col-md-4{
-        margin-top: 20px;
-        max-width: 90%;
-    }
-    
-    section.address .col-md-8{
-        max-width: 100%;
-    }
-
-    section.address .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section.address .card{
-        max-width: 230px;
-    }
-}
 
 @media (max-width: 768px){
     section.donate .row{
@@ -152,10 +103,6 @@ section.address .col-md-4{
         margin-top: 320px;
         margin-right: -180px;
         transform: rotate(-90deg);
-    }
-
-    section.address .col-md-8{
-        margin-bottom: 80px
     }
 }
 

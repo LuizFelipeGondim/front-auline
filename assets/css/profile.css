@@ -101,9 +101,8 @@ section.content-main .content .cards .card{
     max-width: 240px;
 }
 
-section.content-main .content .cards .card img{
+section.content-main .content .cards .card .card-img-top{
     cursor: pointer;
-    z-index: 3;
     min-height: 180px;
 }
 
@@ -115,31 +114,6 @@ section.content-main .content .cards .card .info-top{
 
 section.content-main .cards .card .info-top img{
     min-height: 20px;
-}
-
-section.content-main .content .cards .card .block-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
-}
-
-section.content-main .content .cards .card .localization{
-    margin-top: -8px;
-}
-
-section.content-main .content .cards .card .block-info .info p{
-    margin-top: 15px !important;
-    cursor: pointer;
-}
-
-section.content-main .content .cards .card .block-info .info{
-    height: 30px;
-    width: 30px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center !important;
 }
 
 /* form */

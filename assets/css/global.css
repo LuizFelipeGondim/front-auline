@@ -108,6 +108,7 @@ div.waves{
     color: #ffffff;
 }
 
+
 /* icon */
 
 .icon{
@@ -115,18 +116,21 @@ div.waves{
     height: 80px !important;
 }
 
+img.small-icon{
+    width: 15px !important;
+    height: 20px !important;
+}
+
+
 /* info blocks */
+.lost{
+    border: 1px solid red;
+    color:  red;
+}
 
 .size{
-    background-color: #FF914D;
-}
-
-.sex-male{
-    background-color: #1fbaca;
-}
-
-.sex-female{
-    background-color: #de0ec4;
+    border: 1px solid #FF914D;
+    color:  #FF914D;
 }
 
 /* navbar */

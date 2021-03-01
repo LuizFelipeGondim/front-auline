@@ -88,72 +88,68 @@ section.filter select.input-filter{
 
 /* publications */
 
-section.publications{
+section{
     background-color: #F3F3F3;
 }
 
-section.publications .col-md-12{
+section .col-md-12{
     display:flex;
     flex-direction: row;
     justify-content: center;
     margin: 20px 0px;
 }
 
-section.publications .container .row .col-md-4{
+section .container .row .col-md-3{
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
 
-section.publications .card{
+section .card{
     margin:20px 0px;
+    border: none;
 }
 
-section.publications .card img{
+section .card:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.7s;
+}
+
+section .card img.card-img-top{
     z-index: 3;
     min-height: 180px
 }
 
-section.publications .card .overlay-green{
-    width:100%;
-    height: 190px;
-    background-color: #57BC90;
-    opacity: 0.7;
-    z-index: 4;
-    display: none;
-    
-}
-
-section.publications .card img:hover + .overlay-green{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
-
-section.publications .card .block-info{
-    display: flex;
+section .card .title-info{
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
-    width: 100px;
+    width: 100%;
 }
 
-section.publications .card .localization{
-    margin-top: -8px;
+section .card .title-info p{
+    font-size: 12px;
 }
 
-section.publications .card .block-info .info p{
-    margin-top: 15px !important;
-    cursor: pointer;
+section .card .block-info{
+    display: flex;
+    flex-wrap: wrap ;
+    width: 100%;
 }
 
-section.publications .card .block-info .info{
-    height: 30px;
-    width: 30px;
+section .card .localization{
+    margin-top: -4px;
+}
+
+section .card .block-info .info{
     border-radius: 10px;
+    margin: 2px 5px;
+    padding: 0px 10px;
     display: flex;
     justify-content: center;
     align-items: center !important;
+    height: 20px;
+    font-size: 12px !important;
 }
 
 /* help */
@@ -201,16 +197,16 @@ section.help .infocard a p{
 
 /* media queries */
 
-@media (max-width: 990px){
-    section.publications .card {
+@media (max-width: 991px){
+    section .card {
         max-width: 230px;
     }
 
-    section.publications .card img{
+    section .card img.card-img-top{
         min-height: 160px;
     }
 
-    section.publications .card .overlay-green{
+    section .card .overlay-green{
         height: 160px;
     }
 

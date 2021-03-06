@@ -111,7 +111,7 @@ section .card{
 }
 
 section .card:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 8px 7px 5px -3px #cccccc;
     transition: box-shadow 0.7s;
 }
 
